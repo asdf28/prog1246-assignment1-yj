@@ -1,3 +1,7 @@
+p {
+    margin: 20px auto;
+}
+
 body {
     width: 1200px;
     margin: 0 auto; /* no margin from top and bottom of the browser body and auto makes the content sit equidistant from the left and right of the browser body */
@@ -92,6 +96,7 @@ main {
 main h3 {
     background-color: #E3D3B5;
     padding: 5px;
+    margin: 20px auto;
 }
 
 .food_images {
