@@ -1,10 +1,157 @@
-body{
+body {
     width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto; /* no margin from top and bottom of the browser body and auto makes the content sit equidistant from the left and right of the browser body */
+    padding: 20px; /* make the content inside the body sit at a 20px gap from all the 4 sides */
+    background-color: #f5eee0; /* background color */
+    color:#5C3D2E; /* font color */
+    font-family: "Noto Serif", serif; /* use Noto Serif for the default body font*/
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* use flex box for the logo and title*/
+    font-size: 45px;
+    font-weight: bold;
+    justify-content: space-between; /* distribute the spacing among the elements evenly */
+    align-items: flex-end; /* align the elements at the ends of the cross axis*/
+    padding: 20px;
+}
+
+header img {
+    width: 70px;
+}
+
+header h2 {
+    margin: 0; /* to put the title down */
+}
+
+.tagline {
+    font-size: 10px;
+    font-style: italic;
+    color:#604f47;
+}
+
+.headers {
+    font-family: "Libre Bodoni", serif; /* all the headers should be Libre Bodoni*/
+}
+
+nav {
+    background-color: #5C3D2E; 
+    padding: 20px 0; /* top, bottom : 20px */
+    text-align: center; /* make the text in the nav centered */
+}
+
+nav a {
+    background-color: #5C3D2E;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #f5eee0; /* text colour */
+    text-decoration: none; /* remove the underline */
+    padding: 0 30px; /* make gaps to the links */
+}
+
+.hero {
+    margin-top: 20px;
+    position: relative; /* to make this div the relative ancestor of .herotext */
+    text-align: center; /* to center all the content in .hero */
+}
+
+.hero img {
+    width: 100%; /* the width should be full of the body*/
+    height: 400px; 
+    object-fit: cover; /* If the height is greater than 400, cut it off */
+    object-position: center; /* cut the top and bottom */
+    display: block;
+}
+
+.herotext{
+    position: absolute; /* make .herotext content sit in a separate layer over the image */
+    top: 0; /* make it cover the entire area of .hero */
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-color: rgba(92, 61, 46, 0.5); /* add a semi transparent background */
+    text-align: center;
+    color: #F5EEDF; /* the text colour */
+    font-weight: bold; /* make the text bold */
+    padding-top: 100px; /* put the text down*/
+}
+
+main {
+    float: left; /* main should be on the left using float */
+    width: 600px;
+    box-sizing: border-box; /* the width contains padding and border*/
+    margin-bottom: 30px;
+}
+
+main h3 {
+    background-color: #E3D3B5;
+    padding: 5px;
+}
+
+.food_images {
+    width: 100%;
+}
+
+.bluelink{
+    color: #016ea9; /* change the colour */
+    text-decoration: none; /* remove underline */
+}
+
+.bluelink:hover{ 
+    color: #6293ad; /* change the colour */
+}
+
+.btn-youtube-kimbap {
+	background-color: #9C4A1A;
+	color: #F5EEDF;
+	display: inline-block; /* so that we can assign a width */
+	width: 50%; /* set the width of the link */
+	font-size: 20px; 
+    font-weight: bold;
+	border: 2px solid white; /* add a border */
+	text-decoration: none; /* remove the underline */
+    text-align: center;
+    margin-bottom: 10px;
+	padding: 15px;
+    border-radius: 20px;
+}
+
+.btn-youtube-kimbap:hover {
+    background-color: #9d5b35; /* when the mouse over */
+}
+
+aside {
+    float : left; /* float on left, but right side of the main */
+    width : 550px;
+    margin-left: 50px;
+    box-sizing: border-box; /* the width contains padding and border*/
+}
+
+aside h2 {
+    background-color: #5C3D2E;
+    color: #F5EEDF;
+    padding: 10px;
+}
+
+aside ul {
+    list-style: none; /* removes the dots */
+    padding-left: 0; /* removes the gap on the left */
+}
+
+aside li {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+aside li:nth-child(odd){
+    background-color: #E3D3B5;
+}
+
+footer{
+    clear: both; /* clear the floating elements above */
+    text-align: center; /* Center the text in the footer */
+    background-color: #5C3D2E;
+    color: #F5EEDF;
+    padding: 10px;
 }
