@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-    width: 70px;
+    width: 90px;
 }
 
 header h2 {
@@ -25,9 +25,11 @@ header h2 {
 }
 
 .tagline {
-    font-size: 10px;
+    font-size: 20px;
     font-style: italic;
     color:#604f47;
+    margin: 0; /* to put the title down */
+    text-align: end;
 }
 
 .headers {
@@ -76,6 +78,10 @@ nav a {
     padding-top: 100px; /* put the text down*/
 }
 
+.herotext h2 {
+    margin-bottom: 30px;
+}
+
 main {
     float: left; /* main should be on the left using float */
     width: 600px;
@@ -92,13 +98,15 @@ main h3 {
     width: 100%;
 }
 
-.bluelink{
-    color: #016ea9; /* change the colour */
+.redlink{
+    color: #9C4A1A; /* change the colour */
     text-decoration: none; /* remove underline */
+    font-weight: bold;
 }
 
-.bluelink:hover{ 
-    color: #6293ad; /* change the colour */
+.redlink:hover{ 
+    color: #5C3D2E; /* change the colour */
+    font-weight: bold;
 }
 
 .btn-youtube-kimbap {
